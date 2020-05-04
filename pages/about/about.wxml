@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="userinfo">
+        <button bindgetuserinfo="getUserInfo" openType="getUserInfo" wx:if="{{!hasUserInfo&&canIUse}}"> 获取头像昵称 </button>
+        <block wx:else>
+            <image class="userinfo-avatar" mode="cover" src="{{userInfo.avatarUrl}}"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+    <view class="cates-container" wx:if="{{hasUserInfo}}">
+        <view>分类</view>
+        <view class="cates">
+            <view bindtap="onAdd" class="cate" data-cate="{{item}}" wx:for="{{cates}}" wx:key="{{item.id}}">
+                <text>{{item.text}}</text>
+            </view>
+            <view bindtap="onAdd" class="add">
+                <image src="/images/icon/add.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

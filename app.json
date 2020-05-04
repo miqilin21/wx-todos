@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/calendar/calendar",
+    "pages/done/done",
+    "pages/detail/detail",
+    "pages/lists/lists",
+    "pages/cate/cate"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TODOS",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#000000",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "待办",
+        "iconPath": "images/tab/uncheck.png",
+        "selectedIconPath": "images/tab/uncheck-active.png"
+      },
+      {
+        "pagePath": "pages/done/done",
+        "text": "已完成",
+        "iconPath": "images/tab/check.png",
+        "selectedIconPath": "images/tab/check-active.png"
+      },
+      {
+        "pagePath": "pages/calendar/calendar",
+        "text": "日历",
+        "iconPath": "images/tab/calendar.png",
+        "selectedIconPath": "images/tab/calendar-active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/tab/person.png",
+        "selectedIconPath": "images/tab/person-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

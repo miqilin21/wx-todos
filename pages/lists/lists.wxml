@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="lists">
+        <view class="nodata" wx:if="{{lists.length<1}}">暂无数据</view>
+        <component-todo bindstate="onStateChange" todo="{{item}}" wx:for="{{lists}}" wx:key="{{item.id}}"></component-todo>
+    </view>
+</view>

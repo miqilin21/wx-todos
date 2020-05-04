@@ -1,0 +1,7 @@
+<view class="container">
+    <input bindconfirm="{{isAdd?'addCate':'editCate'}}" bindinput="onInput" class="cate" focus="true" placeholder="添加分类" value="{{text}}"></input>
+    <view class="btns">
+        <button bindtap="{{isAdd?'addCate':'editCate'}}" class="add" type="primary">{{isAdd?'添加':'修改'}}</button>
+        <button bindtap="delCate" class="del">删除</button>
+    </view>
+</view>

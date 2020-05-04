@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="head">
+        <image src="{{todo.done?check_url:uncheck_url}}"></image>
+        <input bindinput="onChangeText" class="title" focus="true" value="{{todo.text}}"></input>
+        <image bindtap="onDelete" src="/images/icon/trash.png"></image>
+    </view>
+    <view class="setting">
+        <picker bindchange="bindPickerChange" range="{{categories}}" value="{{todo.category}}">
+            <view class="picker"> 分类 <text>{{cate}}</text>
+            </view>
+        </picker>
+        <picker bindchange="bindDateChange" mode="date" value="{{todo.id}}">
+            <view class="picker"> 日期 <text>{{date}}</text>
+            </view>
+        </picker>
+    </view>
+    <textarea bindinput="onChangeDesc" class="text" placeholder="描述" value="{{todo.desc}}"></textarea>
+</view>
